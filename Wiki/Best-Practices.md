@@ -1,0 +1,5 @@
+- It is recommended for users to keep their user profile up to date on timely basis for effective search results.
+- **Managing user expectations**: 
+    - Maximum of 5 user profiles can be selected from a particular search result.
+    - Profile once updated gets reflected instantly in Azure Active Directory. However, it takes approx. ~30 minutes to reflect in SharePoint search results.
+    - SharePoint search APIs works only for SharePoint online licensed tenants. Click [here] (https://docs.microsoft.com/en-us/sharepoint/dev/general-development/sharepoint-search-rest-api-overview#sourceid) for reference documents.
