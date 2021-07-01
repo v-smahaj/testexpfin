@@ -45,7 +45,6 @@ export class ProfileSearchWrapperPage extends React.Component<{}, ProfileSearchP
     telemetry?: any = null;
     theme?: string | null;
     appInsights: ApplicationInsights;
-    locale: string;
 
     constructor(props: any) {
         super(props);
@@ -54,7 +53,6 @@ export class ProfileSearchWrapperPage extends React.Component<{}, ProfileSearchP
         this.token = params.get("token");
         this.telemetry = params.get("telemetry");
         this.theme = params.get("theme");
-        this.locale = params.get("locale")!;
 
         // store application settings in local storage to use later to allow refreshing page from error page.
         if (this.token) {
@@ -120,7 +118,7 @@ export class ProfileSearchWrapperPage extends React.Component<{}, ProfileSearchP
     */
     async componentDidMount() {
         microsoftTeams.initialize();
-        let response = await getResourceStrings(this.token, this.locale);
+        let response = await getResourceStrings(this.token);
 
         if (response.status === 200 && response.data) {
 

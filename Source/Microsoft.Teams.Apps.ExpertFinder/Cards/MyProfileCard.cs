@@ -23,6 +23,11 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Cards
         private const string GoToProfileUrl = "https://delve.office.com/";
 
         /// <summary>
+        /// text that triggers go to profile action.
+        /// </summary>
+        private const string GoToProfileCommand = "Go to profile";
+
+        /// <summary>
         /// Get the user profile card attachment for given user profile.
         /// </summary>
         /// <param name="userProfile">User profile details.</param>
@@ -128,7 +133,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Cards
                             {
                                 new AdaptiveOpenUrlAction
                                 {
-                                    Title = Strings.GotoProfileTitle,
+                                    Title = GoToProfileCommand,
                                     Url = new Uri($"{GoToProfileUrl}?u={userProfile.Id}&v=profiledetails"),
                                 },
                             },

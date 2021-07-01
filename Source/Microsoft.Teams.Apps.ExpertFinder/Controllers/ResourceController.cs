@@ -5,11 +5,9 @@
 namespace Microsoft.Teams.Apps.ExpertFinder.Controllers
 {
     using System;
-    using System.Globalization;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Localization;
     using Microsoft.Extensions.Logging;
     using Microsoft.Teams.Apps.ExpertFinder.Resources;
 
@@ -27,19 +25,12 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Controllers
         private readonly ILogger logger;
 
         /// <summary>
-        /// The current cultures' string localizer.
-        /// </summary>
-        private readonly IStringLocalizer<Strings> localizer;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="ResourceController"/> class.
         /// </summary>
         /// <param name="logger">Instance to send logs to the Application Insights service.</param>
-        /// <param name="localizer">The current cultures' string localizer.</param>
-        public ResourceController(ILogger<ResourceController> logger, IStringLocalizer<Strings> localizer)
+        public ResourceController(ILogger<ResourceController> logger)
         {
             this.logger = logger;
-            this.localizer = localizer;
         }
 
         /// <summary>
@@ -47,7 +38,6 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Controllers
         /// </summary>
         /// <returns>Object containing required strings to be used in client app.</returns>
         [HttpGet]
-        [Route("/api/resources/strings")]
         public ActionResult GetResourceStrings()
         {
             try
@@ -63,6 +53,28 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Controllers
                     Strings.SchoolsTitle,
                     Strings.ViewButtonText,
                     Strings.MaxUserProfilesError,
+                };
+                return this.Ok(strings);
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, "Error while getting strings from resource controller.");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Get resource strings for displaying on error page in client app.
+        /// </summary>
+        /// <returns>Object containing required strings to be used in client app.</returns>
+        [HttpGet]
+        [Route("error")]
+        public ActionResult GetErrorResourceStrings()
+        {
+            try
+            {
+                var strings = new
+                {
                     Strings.UnauthorizedErrorMessage,
                     Strings.ForbiddenErrorMessage,
                     Strings.GeneralErrorMessage,
@@ -72,7 +84,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Controllers
             }
             catch (Exception ex)
             {
-                this.logger.LogError(ex, "Error while getting strings from resource controller.");
+                this.logger.LogError(ex, "Error while getting error page resource strings from resource controller.");
                 return this.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }

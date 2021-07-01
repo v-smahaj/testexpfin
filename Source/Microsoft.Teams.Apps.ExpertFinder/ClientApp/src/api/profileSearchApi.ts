@@ -25,8 +25,19 @@ export const getUserProfiles = async (searchText: string, filters: string[], tok
 /**
 * Get localized resource strings from api
 */
-export const getResourceStrings = async (token: any, locale: string): Promise<any> => {
+export const getResourceStrings = async (token: any): Promise<any> => {
 
-	let url = baseAxiosUrl + "/api/resources/strings";
-	return await axios.get(url, token, locale);
+    let url = baseAxiosUrl + "/api/resource";
+	return await axios.get(url, token);
 }
+
+/**
+* Get localized error page resource strings from api
+*/
+export const getErrorResourceStrings = async (token: any): Promise<any> => {
+
+	let url = baseAxiosUrl + "/api/resource/error";
+	return await axios.get(url, token);
+}
+
+

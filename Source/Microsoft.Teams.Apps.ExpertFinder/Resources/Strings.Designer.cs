@@ -22,7 +22,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Strings {
+    internal class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Teams.Apps.ExpertFinder.Resources.Strings", typeof(Strings).Assembly);
@@ -51,7 +51,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter information (300 characters max).
         /// </summary>
-        public static string AboutMePlaceHolderText {
+        internal static string AboutMePlaceHolderText {
             get {
                 return ResourceManager.GetString("AboutMePlaceHolderText", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to About me.
         /// </summary>
-        public static string AboutMeTitle {
+        internal static string AboutMeTitle {
             get {
                 return ResourceManager.GetString("AboutMeTitle", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Start a chat.
         /// </summary>
-        public static string ChatTitle {
+        internal static string ChatTitle {
             get {
                 return ResourceManager.GetString("ChatTitle", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Type a keyword to find people with that information in their profile..
         /// </summary>
-        public static string DefaultCardContentME {
+        internal static string DefaultCardContentME {
             get {
                 return ResourceManager.GetString("DefaultCardContentME", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to View more.
         /// </summary>
-        public static string DetailsTitle {
+        internal static string DetailsTitle {
             get {
                 return ResourceManager.GetString("DetailsTitle", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Edit profile.
         /// </summary>
-        public static string EditProfileTitle {
+        internal static string EditProfileTitle {
             get {
                 return ResourceManager.GetString("EditProfileTitle", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please update your profile so your colleagues know what you do..
         /// </summary>
-        public static string EmptyProfileCardContent {
+        internal static string EmptyProfileCardContent {
             get {
                 return ResourceManager.GetString("EmptyProfileCardContent", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Something went wrong. Try again in a few minutes..
         /// </summary>
-        public static string ErrorMessage {
+        internal static string ErrorMessage {
             get {
                 return ResourceManager.GetString("ErrorMessage", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Something went wrong and I couldn’t update your profile. Try again in a few minutes..
         /// </summary>
-        public static string FailedToUpdateProfile {
+        internal static string FailedToUpdateProfile {
             get {
                 return ResourceManager.GetString("FailedToUpdateProfile", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sorry, seems like you don&apos;t have permission to access this page..
         /// </summary>
-        public static string ForbiddenErrorMessage {
+        internal static string ForbiddenErrorMessage {
             get {
                 return ResourceManager.GetString("ForbiddenErrorMessage", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
-        public static string FullNameTitle {
+        internal static string FullNameTitle {
             get {
                 return ResourceManager.GetString("FullNameTitle", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Oops! An unexpected error seems to have occured. Why not try refreshing your page? Or you can contact your administrator if the problem persists..
         /// </summary>
-        public static string GeneralErrorMessage {
+        internal static string GeneralErrorMessage {
             get {
                 return ResourceManager.GetString("GeneralErrorMessage", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Go to profile.
         /// </summary>
-        public static string GotoProfileTitle {
+        internal static string GotoProfileTitle {
             get {
                 return ResourceManager.GetString("GotoProfileTitle", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to I can help you find people in your organization with specific expertise and skills. Here’s what you can do:.
         /// </summary>
-        public static string HelpMessage {
+        internal static string HelpMessage {
             get {
                 return ResourceManager.GetString("HelpMessage", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Hint: Type a skill (like “data visualization”), interest (“hiking”), or the name of a school to find people with that information in their profile..
         /// </summary>
-        public static string InitialSearchResultMessageBodyText {
+        internal static string InitialSearchResultMessageBodyText {
             get {
                 return ResourceManager.GetString("InitialSearchResultMessageBodyText", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Here are list of things one can do:.
         /// </summary>
-        public static string InitialSearchResultMessageHeaderText {
+        internal static string InitialSearchResultMessageHeaderText {
             get {
                 return ResourceManager.GetString("InitialSearchResultMessageHeaderText", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter information (100 characters max).
         /// </summary>
-        public static string InterestsPlaceHolderText {
+        internal static string InterestsPlaceHolderText {
             get {
                 return ResourceManager.GetString("InterestsPlaceHolderText", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Interests.
         /// </summary>
-        public static string InterestTitle {
+        internal static string InterestTitle {
             get {
                 return ResourceManager.GetString("InterestTitle", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sorry! You don&apos;t seem to be a user in the organization for which I was set up..
         /// </summary>
-        public static string InvalidTenant {
+        internal static string InvalidTenant {
             get {
                 return ResourceManager.GetString("InvalidTenant", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Login is successful!.
         /// </summary>
-        public static string LoginSuccessText {
+        internal static string LoginSuccessText {
             get {
                 return ResourceManager.GetString("LoginSuccessText", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You can select up to 5 user profiles..
         /// </summary>
-        public static string MaxUserProfilesError {
+        internal static string MaxUserProfilesError {
             get {
                 return ResourceManager.GetString("MaxUserProfilesError", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to My profile.
         /// </summary>
-        public static string MyProfileTitle {
+        internal static string MyProfileTitle {
             get {
                 return ResourceManager.GetString("MyProfileTitle", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to See how your profile looks to others. Update your profile with skills, interests, and schools..
         /// </summary>
-        public static string MyProfileWelcomeCardContent {
+        internal static string MyProfileWelcomeCardContent {
             get {
                 return ResourceManager.GetString("MyProfileWelcomeCardContent", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to None.
         /// </summary>
-        public static string NoneText {
+        internal static string NoneText {
             get {
                 return ResourceManager.GetString("NoneText", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to To search for experts, you’ll need to sign in..
         /// </summary>
-        public static string NotLoggedInText {
+        internal static string NotLoggedInText {
             get {
                 return ResourceManager.GetString("NotLoggedInText", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Refresh.
         /// </summary>
-        public static string RefreshLinkText {
+        internal static string RefreshLinkText {
             get {
                 return ResourceManager.GetString("RefreshLinkText", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter information (200 characters max).
         /// </summary>
-        public static string SchoolsPlaceHolderText {
+        internal static string SchoolsPlaceHolderText {
             get {
                 return ResourceManager.GetString("SchoolsPlaceHolderText", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Schools.
         /// </summary>
-        public static string SchoolsTitle {
+        internal static string SchoolsTitle {
             get {
                 return ResourceManager.GetString("SchoolsTitle", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Click **Search** to filter for individuals by skills, interests, and other attributes in their profiles..
         /// </summary>
-        public static string SearchCardContent {
+        internal static string SearchCardContent {
             get {
                 return ResourceManager.GetString("SearchCardContent", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to No results found. Try a different keyword..
         /// </summary>
-        public static string SearchResultNoItemsText {
+        internal static string SearchResultNoItemsText {
             get {
                 return ResourceManager.GetString("SearchResultNoItemsText", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Search for experts.
         /// </summary>
-        public static string SearchTaskModuleTitle {
+        internal static string SearchTaskModuleTitle {
             get {
                 return ResourceManager.GetString("SearchTaskModuleTitle", resourceCulture);
             }
@@ -369,7 +369,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Type a term to search for.
         /// </summary>
-        public static string SearchTextBoxPlaceholder {
+        internal static string SearchTextBoxPlaceholder {
             get {
                 return ResourceManager.GetString("SearchTextBoxPlaceholder", resourceCulture);
             }
@@ -378,7 +378,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
-        public static string SearchTitle {
+        internal static string SearchTitle {
             get {
                 return ResourceManager.GetString("SearchTitle", resourceCulture);
             }
@@ -387,7 +387,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Filter for individuals by skills, interests, and other attributes in their profiles..
         /// </summary>
-        public static string SearchWelcomeCardContent {
+        internal static string SearchWelcomeCardContent {
             get {
                 return ResourceManager.GetString("SearchWelcomeCardContent", resourceCulture);
             }
@@ -396,7 +396,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sign in.
         /// </summary>
-        public static string SignInButtonText {
+        internal static string SignInButtonText {
             get {
                 return ResourceManager.GetString("SignInButtonText", resourceCulture);
             }
@@ -405,7 +405,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to To search for experts, you’ll need to sign in..
         /// </summary>
-        public static string SignInCardText {
+        internal static string SignInCardText {
             get {
                 return ResourceManager.GetString("SignInCardText", resourceCulture);
             }
@@ -414,7 +414,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You have been signed out..
         /// </summary>
-        public static string SignOutText {
+        internal static string SignOutText {
             get {
                 return ResourceManager.GetString("SignOutText", resourceCulture);
             }
@@ -423,7 +423,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter information (100 characters max).
         /// </summary>
-        public static string SkillsPlaceHolderText {
+        internal static string SkillsPlaceHolderText {
             get {
                 return ResourceManager.GetString("SkillsPlaceHolderText", resourceCulture);
             }
@@ -432,7 +432,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Skills.
         /// </summary>
-        public static string SkillsTitle {
+        internal static string SkillsTitle {
             get {
                 return ResourceManager.GetString("SkillsTitle", resourceCulture);
             }
@@ -441,7 +441,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sorry, an error occurred while trying to access this service..
         /// </summary>
-        public static string UnauthorizedErrorMessage {
+        internal static string UnauthorizedErrorMessage {
             get {
                 return ResourceManager.GetString("UnauthorizedErrorMessage", resourceCulture);
             }
@@ -450,7 +450,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
-        public static string UpdateTitle {
+        internal static string UpdateTitle {
             get {
                 return ResourceManager.GetString("UpdateTitle", resourceCulture);
             }
@@ -459,7 +459,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Use semicolons between each item in the fields below..
         /// </summary>
-        public static string ValidationTaskModuleMessage {
+        internal static string ValidationTaskModuleMessage {
             get {
                 return ResourceManager.GetString("ValidationTaskModuleMessage", resourceCulture);
             }
@@ -468,7 +468,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to View.
         /// </summary>
-        public static string ViewButtonText {
+        internal static string ViewButtonText {
             get {
                 return ResourceManager.GetString("ViewButtonText", resourceCulture);
             }
@@ -477,7 +477,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to I can help you find people in your organization with specific expertise and skills. If it’s in their profile, I can find it! Here’s what you can do:.
         /// </summary>
-        public static string WelcomeCardContent {
+        internal static string WelcomeCardContent {
             get {
                 return ResourceManager.GetString("WelcomeCardContent", resourceCulture);
             }
@@ -486,7 +486,7 @@ namespace Microsoft.Teams.Apps.ExpertFinder.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Welcome!.
         /// </summary>
-        public static string WelcomeText {
+        internal static string WelcomeText {
             get {
                 return ResourceManager.GetString("WelcomeText", resourceCulture);
             }
